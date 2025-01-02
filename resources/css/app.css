@@ -1,0 +1,115 @@
+/* General body styles */
+body {
+    background-color: #f3f4f6; /* Subtle gray for a modern look */
+    color: #1f2937; /* Dark gray for text */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body takes full height */
+}
+
+/* Main content area */
+main {
+    flex-grow: 1; /* Ensures the main content takes up remaining space */
+    padding: 20px;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #374151; /* Dark gray navbar */
+    border-bottom: 3px solid #4b5563; /* Slightly lighter gray border */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* More defined shadow */
+}
+
+.navbar a.nav-link {
+    color: #f9fafb; /* Light text for better contrast */
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px;
+    text-transform: uppercase;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    border-radius: 5px;
+}
+
+.navbar a.nav-link:hover {
+    background-color: #6b7280; /* Medium gray on hover */
+    color: #ffffff; /* White text on hover */
+}
+
+/* Product card styles */
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Modern card shadow */
+    margin: 20px;
+    transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Slight lift effect */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.card img {
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card .product-price {
+    font-size: 20px;
+    font-weight: 600;
+    color: #10b981; /* Green for price */
+    margin-top: 10px;
+}
+
+/* Pagination styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+    align-items: center;
+}
+
+.pagination .page-link {
+    background-color: #e5e7eb; /* Light gray buttons */
+    border-radius: 6px;
+    padding: 10px 15px;
+    border: none;
+    color: #1f2937; /* Dark text */
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination .page-link:hover {
+    background-color: #3b82f6; /* Blue on hover */
+    color: #ffffff; /* White text on hover */
+}
+
+/* Footer styles (Optional) */
+footer {
+    background-color: #1f2937; /* Dark footer */
+    color: #d1d5db; /* Light gray text */
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+footer a {
+    color: #60a5fa; /* Light blue links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #3b82f6; /* Darker blue on hover */
+}
